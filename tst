@@ -1,4 +1,4 @@
-{
+[{
   "remarks": "UserMehdiii 5️⃣0️⃣",
   "log": {
     "loglevel": "warning"
@@ -216,7 +216,7 @@
     ]
   },
   "stats": {}
-} ,
+},
 {
   "remarks": "UserMehdiii 5️⃣1️⃣",
   "log": {
@@ -435,4 +435,4 @@
     ]
   },
   "stats": {}
-}
+}]
