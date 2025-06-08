@@ -1915,7 +1915,7 @@
     "probeUrl": "https://www.gstatic.com/generate_204",
     "probeInterval": "30s",
     "enableConcurrency": true 
-},
+}},
 {
   "dns": {
     "hosts": {
