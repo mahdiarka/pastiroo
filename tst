@@ -1917,3 +1917,1911 @@
     "enableConcurrency": true
   }
 }
+
+{
+  "remarks": "UserMehdiii ( Ping )",
+  "log": {
+    "loglevel": "warning"
+  },
+  "dns": {
+    "hosts": {
+      "geosite:category-ads-all": [
+        "127.0.0.1"
+      ],
+      "geosite:category-ads-ir": [
+        "127.0.0.1"
+      ],
+      "geosite:category-porn": [
+        "127.0.0.1"
+      ]
+    },
+    "servers": [
+      "https://8.8.8.8/dns-query",
+      {
+        "address": "8.8.8.8",
+        "domains": [
+          "full:bozghale.pages.dev",
+          "full:www.speedtest.net",
+          "full:zula.ir"
+        ],
+        "skipFallback": true
+      },
+      {
+        "address": "8.8.8.8",
+        "domains": [
+          "geosite:category-ir"
+        ],
+        "expectIPs": [
+          "geoip:ir"
+        ],
+        "skipFallback": true
+      }
+    ],
+    "queryStrategy": "UseIP",
+    "tag": "dns"
+  },
+  "inbounds": [
+    {
+      "port": 10808,
+      "protocol": "socks",
+      "settings": {
+        "auth": "noauth",
+        "udp": true,
+        "userLevel": 8
+      },
+      "sniffing": {
+        "destOverride": [
+          "http",
+          "tls"
+        ],
+        "enabled": true,
+        "routeOnly": true
+      },
+      "tag": "socks-in"
+    },
+    {
+      "port": 10853,
+      "protocol": "dokodemo-door",
+      "settings": {
+        "address": "1.1.1.1",
+        "network": "tcp,udp",
+        "port": 53
+      },
+      "tag": "dns-in"
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "bozghale.pages.dev",
+            "port": 443,
+            "users": [
+              {
+                "id": "9cf5cc8b-72ec-474e-94d5-86bfee66dba2",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "domainStrategy": "UseIPv4v6"
+        },
+        "wsSettings": {
+          "host": "bozghale.pages.dev",
+          "path": "/IqHkro0jKN1LcYi8/MTkzLjEyMy44MS4xMDUsMy43NS4xNzAuMTc5LDIxMi4zNC4xNDIuMjM4?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "http/1.1"
+          ],
+          "serverName": "boZGhalE.pages.Dev"
+        }
+      },
+      "tag": "prox-1"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "www.speedtest.net",
+            "port": 443,
+            "users": [
+              {
+                "id": "9cf5cc8b-72ec-474e-94d5-86bfee66dba2",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "domainStrategy": "UseIPv4v6"
+        },
+        "wsSettings": {
+          "host": "bozghale.pages.dev",
+          "path": "/AqXAV5zd6UckxlWj/MTkzLjEyMy44MS4xMDUsMy43NS4xNzAuMTc5LDIxMi4zNC4xNDIuMjM4?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "http/1.1"
+          ],
+          "serverName": "bOzGhalE.PAgeS.deV"
+        }
+      },
+      "tag": "prox-2"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.21.16.1",
+            "port": 443,
+            "users": [
+              {
+                "id": "9cf5cc8b-72ec-474e-94d5-86bfee66dba2",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "domainStrategy": "UseIPv4v6"
+        },
+        "wsSettings": {
+          "host": "bozghale.pages.dev",
+          "path": "/LUUOhObCLcz5w4jq/MTkzLjEyMy44MS4xMDUsMy43NS4xNzAuMTc5LDIxMi4zNC4xNDIuMjM4?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "http/1.1"
+          ],
+          "serverName": "bOZgHale.PAGES.deV"
+        }
+      },
+      "tag": "prox-3"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.21.96.1",
+            "port": 443,
+            "users": [
+              {
+                "id": "9cf5cc8b-72ec-474e-94d5-86bfee66dba2",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "domainStrategy": "UseIPv4v6"
+        },
+        "wsSettings": {
+          "host": "bozghale.pages.dev",
+          "path": "/UUmiaefrb6caAWGZ/MTkzLjEyMy44MS4xMDUsMy43NS4xNzAuMTc5LDIxMi4zNC4xNDIuMjM4?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "http/1.1"
+          ],
+          "serverName": "boZGHale.PaGEs.dEv"
+        }
+      },
+      "tag": "prox-4"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.21.112.1",
+            "port": 443,
+            "users": [
+              {
+                "id": "9cf5cc8b-72ec-474e-94d5-86bfee66dba2",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "domainStrategy": "UseIPv4v6"
+        },
+        "wsSettings": {
+          "host": "bozghale.pages.dev",
+          "path": "/v9yRe1zrHDYyqmeo/MTkzLjEyMy44MS4xMDUsMy43NS4xNzAuMTc5LDIxMi4zNC4xNDIuMjM4?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "http/1.1"
+          ],
+          "serverName": "boZgHaLe.pAGEs.dEv"
+        }
+      },
+      "tag": "prox-5"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.21.80.1",
+            "port": 443,
+            "users": [
+              {
+                "id": "9cf5cc8b-72ec-474e-94d5-86bfee66dba2",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "domainStrategy": "UseIPv4v6"
+        },
+        "wsSettings": {
+          "host": "bozghale.pages.dev",
+          "path": "/4A41LLpi1AXN89r5/MTkzLjEyMy44MS4xMDUsMy43NS4xNzAuMTc5LDIxMi4zNC4xNDIuMjM4?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "http/1.1"
+          ],
+          "serverName": "boZGHalE.PAGES.Dev"
+        }
+      },
+      "tag": "prox-6"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.21.32.1",
+            "port": 443,
+            "users": [
+              {
+                "id": "9cf5cc8b-72ec-474e-94d5-86bfee66dba2",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "domainStrategy": "UseIPv4v6"
+        },
+        "wsSettings": {
+          "host": "bozghale.pages.dev",
+          "path": "/xqVVEnpKAzhIf2Uk/MTkzLjEyMy44MS4xMDUsMy43NS4xNzAuMTc5LDIxMi4zNC4xNDIuMjM4?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "http/1.1"
+          ],
+          "serverName": "BOZghAlE.PAgEs.DEV"
+        }
+      },
+      "tag": "prox-7"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.21.48.1",
+            "port": 443,
+            "users": [
+              {
+                "id": "9cf5cc8b-72ec-474e-94d5-86bfee66dba2",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "domainStrategy": "UseIPv4v6"
+        },
+        "wsSettings": {
+          "host": "bozghale.pages.dev",
+          "path": "/IwNZkwyauCeYjRf1/MTkzLjEyMy44MS4xMDUsMy43NS4xNzAuMTc5LDIxMi4zNC4xNDIuMjM4?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "http/1.1"
+          ],
+          "serverName": "bozgHaLe.pAgES.dEV"
+        }
+      },
+      "tag": "prox-8"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.21.64.1",
+            "port": 443,
+            "users": [
+              {
+                "id": "9cf5cc8b-72ec-474e-94d5-86bfee66dba2",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "domainStrategy": "UseIPv4v6"
+        },
+        "wsSettings": {
+          "host": "bozghale.pages.dev",
+          "path": "/XQ5BELVWOnmzlAij/MTkzLjEyMy44MS4xMDUsMy43NS4xNzAuMTc5LDIxMi4zNC4xNDIuMjM4?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "http/1.1"
+          ],
+          "serverName": "bozGhALE.pagEs.deV"
+        }
+      },
+      "tag": "prox-9"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "[2606:4700:3030::6815:1001]",
+            "port": 443,
+            "users": [
+              {
+                "id": "9cf5cc8b-72ec-474e-94d5-86bfee66dba2",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "domainStrategy": "UseIPv4v6"
+        },
+        "wsSettings": {
+          "host": "bozghale.pages.dev",
+          "path": "/0X11b6OfJyNQlLXO/MTkzLjEyMy44MS4xMDUsMy43NS4xNzAuMTc5LDIxMi4zNC4xNDIuMjM4?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "http/1.1"
+          ],
+          "serverName": "bozghAlE.paGes.deV"
+        }
+      },
+      "tag": "prox-10"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "[2606:4700:3030::6815:2001]",
+            "port": 443,
+            "users": [
+              {
+                "id": "9cf5cc8b-72ec-474e-94d5-86bfee66dba2",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "domainStrategy": "UseIPv4v6"
+        },
+        "wsSettings": {
+          "host": "bozghale.pages.dev",
+          "path": "/Vt3w71suMHvzDZ1g/MTkzLjEyMy44MS4xMDUsMy43NS4xNzAuMTc5LDIxMi4zNC4xNDIuMjM4?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "http/1.1"
+          ],
+          "serverName": "bozGHaLE.pagES.DEv"
+        }
+      },
+      "tag": "prox-11"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "[2606:4700:3030::6815:4001]",
+            "port": 443,
+            "users": [
+              {
+                "id": "9cf5cc8b-72ec-474e-94d5-86bfee66dba2",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "domainStrategy": "UseIPv4v6"
+        },
+        "wsSettings": {
+          "host": "bozghale.pages.dev",
+          "path": "/KHB1YxpsbgRiSjBe/MTkzLjEyMy44MS4xMDUsMy43NS4xNzAuMTc5LDIxMi4zNC4xNDIuMjM4?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "http/1.1"
+          ],
+          "serverName": "boZghALe.PAGES.DEV"
+        }
+      },
+      "tag": "prox-12"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "[2606:4700:3030::6815:7001]",
+            "port": 443,
+            "users": [
+              {
+                "id": "9cf5cc8b-72ec-474e-94d5-86bfee66dba2",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "domainStrategy": "UseIPv4v6"
+        },
+        "wsSettings": {
+          "host": "bozghale.pages.dev",
+          "path": "/aiITDl7nwVFfoqkc/MTkzLjEyMy44MS4xMDUsMy43NS4xNzAuMTc5LDIxMi4zNC4xNDIuMjM4?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "http/1.1"
+          ],
+          "serverName": "BOzghalE.pAGeS.deV"
+        }
+      },
+      "tag": "prox-13"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "[2606:4700:3030::6815:3001]",
+            "port": 443,
+            "users": [
+              {
+                "id": "9cf5cc8b-72ec-474e-94d5-86bfee66dba2",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "domainStrategy": "UseIPv4v6"
+        },
+        "wsSettings": {
+          "host": "bozghale.pages.dev",
+          "path": "/ZTsSHmObtGvcQoe6/MTkzLjEyMy44MS4xMDUsMy43NS4xNzAuMTc5LDIxMi4zNC4xNDIuMjM4?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "http/1.1"
+          ],
+          "serverName": "bOzgHAle.paGeS.DeV"
+        }
+      },
+      "tag": "prox-14"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "[2606:4700:3030::6815:5001]",
+            "port": 443,
+            "users": [
+              {
+                "id": "9cf5cc8b-72ec-474e-94d5-86bfee66dba2",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "domainStrategy": "UseIPv4v6"
+        },
+        "wsSettings": {
+          "host": "bozghale.pages.dev",
+          "path": "/JybmGoJ4Y7YM3hI6/MTkzLjEyMy44MS4xMDUsMy43NS4xNzAuMTc5LDIxMi4zNC4xNDIuMjM4?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "http/1.1"
+          ],
+          "serverName": "boZGhaLE.PAgEs.dEV"
+        }
+      },
+      "tag": "prox-15"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "[2606:4700:3030::6815:6001]",
+            "port": 443,
+            "users": [
+              {
+                "id": "9cf5cc8b-72ec-474e-94d5-86bfee66dba2",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "domainStrategy": "UseIPv4v6"
+        },
+        "wsSettings": {
+          "host": "bozghale.pages.dev",
+          "path": "/c93mBwrx2KIKmp4t/MTkzLjEyMy44MS4xMDUsMy43NS4xNzAuMTc5LDIxMi4zNC4xNDIuMjM4?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "http/1.1"
+          ],
+          "serverName": "bOZGhALE.PaGes.DeV"
+        }
+      },
+      "tag": "prox-16"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "zula.ir",
+            "port": 443,
+            "users": [
+              {
+                "id": "9cf5cc8b-72ec-474e-94d5-86bfee66dba2",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "domainStrategy": "UseIPv4v6"
+        },
+        "wsSettings": {
+          "host": "bozghale.pages.dev",
+          "path": "/NZIrZipfYwzeM0u7/MTkzLjEyMy44MS4xMDUsMy43NS4xNzAuMTc5LDIxMi4zNC4xNDIuMjM4?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "http/1.1"
+          ],
+          "serverName": "BOZGhALE.pages.deV"
+        }
+      },
+      "tag": "prox-17"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "185.18.250.21",
+            "port": 443,
+            "users": [
+              {
+                "id": "9cf5cc8b-72ec-474e-94d5-86bfee66dba2",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "domainStrategy": "UseIPv4v6"
+        },
+        "wsSettings": {
+          "host": "bozghale.pages.dev",
+          "path": "/qxczmTxw6d6nDW7W/MTkzLjEyMy44MS4xMDUsMy43NS4xNzAuMTc5LDIxMi4zNC4xNDIuMjM4?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "http/1.1"
+          ],
+          "serverName": "bOzghaLe.pAGES.dEV"
+        }
+      },
+      "tag": "prox-18"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "185.18.250.16",
+            "port": 443,
+            "users": [
+              {
+                "id": "9cf5cc8b-72ec-474e-94d5-86bfee66dba2",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "domainStrategy": "UseIPv4v6"
+        },
+        "wsSettings": {
+          "host": "bozghale.pages.dev",
+          "path": "/KCKlnM5BR00O2LN8/MTkzLjEyMy44MS4xMDUsMy43NS4xNzAuMTc5LDIxMi4zNC4xNDIuMjM4?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "http/1.1"
+          ],
+          "serverName": "bozGhALe.PAGes.deV"
+        }
+      },
+      "tag": "prox-19"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "185.18.250.1",
+            "port": 443,
+            "users": [
+              {
+                "id": "9cf5cc8b-72ec-474e-94d5-86bfee66dba2",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "domainStrategy": "UseIPv4v6"
+        },
+        "wsSettings": {
+          "host": "bozghale.pages.dev",
+          "path": "/FjBUq2quxyl9uTjj/MTkzLjEyMy44MS4xMDUsMy43NS4xNzAuMTc5LDIxMi4zNC4xNDIuMjM4?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "http/1.1"
+          ],
+          "serverName": "BoZGhaLe.PAGEs.dev"
+        }
+      },
+      "tag": "prox-20"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "185.18.250.5",
+            "port": 443,
+            "users": [
+              {
+                "id": "9cf5cc8b-72ec-474e-94d5-86bfee66dba2",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "domainStrategy": "UseIPv4v6"
+        },
+        "wsSettings": {
+          "host": "bozghale.pages.dev",
+          "path": "/ZcyKw7ZumxhXqHbN/MTkzLjEyMy44MS4xMDUsMy43NS4xNzAuMTc5LDIxMi4zNC4xNDIuMjM4?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "http/1.1"
+          ],
+          "serverName": "BoZgHALe.pAges.deV"
+        }
+      },
+      "tag": "prox-21"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "[2606:4700:20::ac43:49a3]",
+            "port": 443,
+            "users": [
+              {
+                "id": "9cf5cc8b-72ec-474e-94d5-86bfee66dba2",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "domainStrategy": "UseIPv4v6"
+        },
+        "wsSettings": {
+          "host": "bozghale.pages.dev",
+          "path": "/SonN54ysqRrsYiwz/MTkzLjEyMy44MS4xMDUsMy43NS4xNzAuMTc5LDIxMi4zNC4xNDIuMjM4?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "http/1.1"
+          ],
+          "serverName": "BOZGHAle.PageS.dEv"
+        }
+      },
+      "tag": "prox-22"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "[2606:4700:20::681a:e55]",
+            "port": 443,
+            "users": [
+              {
+                "id": "9cf5cc8b-72ec-474e-94d5-86bfee66dba2",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "domainStrategy": "UseIPv4v6"
+        },
+        "wsSettings": {
+          "host": "bozghale.pages.dev",
+          "path": "/Nda0JiCg3ZvCcc87/MTkzLjEyMy44MS4xMDUsMy43NS4xNzAuMTc5LDIxMi4zNC4xNDIuMjM4?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "http/1.1"
+          ],
+          "serverName": "BOzghALe.PAGeS.Dev"
+        }
+      },
+      "tag": "prox-23"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "[2606:4700:20::681a:f55]",
+            "port": 443,
+            "users": [
+              {
+                "id": "9cf5cc8b-72ec-474e-94d5-86bfee66dba2",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "domainStrategy": "UseIPv4v6"
+        },
+        "wsSettings": {
+          "host": "bozghale.pages.dev",
+          "path": "/WXvLOO1R3IrrCFn4/MTkzLjEyMy44MS4xMDUsMy43NS4xNzAuMTc5LDIxMi4zNC4xNDIuMjM4?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "http/1.1"
+          ],
+          "serverName": "BozGhalE.paGES.deV"
+        }
+      },
+      "tag": "prox-24"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "bozghale.pages.dev",
+            "port": 443,
+            "password": "MaHdY833",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "domainStrategy": "UseIPv4v6"
+        },
+        "wsSettings": {
+          "host": "bozghale.pages.dev",
+          "path": "/trONuMlco4sOjaHZ70/MTkzLjEyMy44MS4xMDUsMy43NS4xNzAuMTc5LDIxMi4zNC4xNDIuMjM4?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "http/1.1"
+          ],
+          "serverName": "BoZghAle.paGes.Dev"
+        }
+      },
+      "tag": "prox-25"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "www.speedtest.net",
+            "port": 443,
+            "password": "MaHdY833",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "domainStrategy": "UseIPv4v6"
+        },
+        "wsSettings": {
+          "host": "bozghale.pages.dev",
+          "path": "/trsAbvOKgWTWW0ILed/MTkzLjEyMy44MS4xMDUsMy43NS4xNzAuMTc5LDIxMi4zNC4xNDIuMjM4?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "http/1.1"
+          ],
+          "serverName": "bOzGHaLe.PAGes.Dev"
+        }
+      },
+      "tag": "prox-26"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "104.21.16.1",
+            "port": 443,
+            "password": "MaHdY833",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "domainStrategy": "UseIPv4v6"
+        },
+        "wsSettings": {
+          "host": "bozghale.pages.dev",
+          "path": "/trZsSiMia2eEj0muae/MTkzLjEyMy44MS4xMDUsMy43NS4xNzAuMTc5LDIxMi4zNC4xNDIuMjM4?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "http/1.1"
+          ],
+          "serverName": "BoZGhalE.pAGeS.deV"
+        }
+      },
+      "tag": "prox-27"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "104.21.96.1",
+            "port": 443,
+            "password": "MaHdY833",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "domainStrategy": "UseIPv4v6"
+        },
+        "wsSettings": {
+          "host": "bozghale.pages.dev",
+          "path": "/trwxjxxBAqBaMc3mpU/MTkzLjEyMy44MS4xMDUsMy43NS4xNzAuMTc5LDIxMi4zNC4xNDIuMjM4?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "http/1.1"
+          ],
+          "serverName": "BozGHalE.pages.DEv"
+        }
+      },
+      "tag": "prox-28"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "104.21.112.1",
+            "port": 443,
+            "password": "MaHdY833",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "domainStrategy": "UseIPv4v6"
+        },
+        "wsSettings": {
+          "host": "bozghale.pages.dev",
+          "path": "/tr9mXdS54rVNnFwRhW/MTkzLjEyMy44MS4xMDUsMy43NS4xNzAuMTc5LDIxMi4zNC4xNDIuMjM4?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "http/1.1"
+          ],
+          "serverName": "bOzgHAle.paGes.DEv"
+        }
+      },
+      "tag": "prox-29"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "104.21.80.1",
+            "port": 443,
+            "password": "MaHdY833",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "domainStrategy": "UseIPv4v6"
+        },
+        "wsSettings": {
+          "host": "bozghale.pages.dev",
+          "path": "/trXZ2Zt9tzDHJHeszj/MTkzLjEyMy44MS4xMDUsMy43NS4xNzAuMTc5LDIxMi4zNC4xNDIuMjM4?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "http/1.1"
+          ],
+          "serverName": "BozghALe.PaGeS.DEV"
+        }
+      },
+      "tag": "prox-30"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "104.21.32.1",
+            "port": 443,
+            "password": "MaHdY833",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "domainStrategy": "UseIPv4v6"
+        },
+        "wsSettings": {
+          "host": "bozghale.pages.dev",
+          "path": "/trfNWLdSU35mROeATD/MTkzLjEyMy44MS4xMDUsMy43NS4xNzAuMTc5LDIxMi4zNC4xNDIuMjM4?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "http/1.1"
+          ],
+          "serverName": "BozGhAle.pAgES.DEv"
+        }
+      },
+      "tag": "prox-31"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "104.21.48.1",
+            "port": 443,
+            "password": "MaHdY833",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "domainStrategy": "UseIPv4v6"
+        },
+        "wsSettings": {
+          "host": "bozghale.pages.dev",
+          "path": "/trA133ViJTReoEkFSv/MTkzLjEyMy44MS4xMDUsMy43NS4xNzAuMTc5LDIxMi4zNC4xNDIuMjM4?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "http/1.1"
+          ],
+          "serverName": "BozGHaLE.Pages.dev"
+        }
+      },
+      "tag": "prox-32"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "104.21.64.1",
+            "port": 443,
+            "password": "MaHdY833",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "domainStrategy": "UseIPv4v6"
+        },
+        "wsSettings": {
+          "host": "bozghale.pages.dev",
+          "path": "/tru7fRlJF4r1Cj5O9n/MTkzLjEyMy44MS4xMDUsMy43NS4xNzAuMTc5LDIxMi4zNC4xNDIuMjM4?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "http/1.1"
+          ],
+          "serverName": "BozGhALe.PAGeS.deV"
+        }
+      },
+      "tag": "prox-33"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "[2606:4700:3030::6815:1001]",
+            "port": 443,
+            "password": "MaHdY833",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "domainStrategy": "UseIPv4v6"
+        },
+        "wsSettings": {
+          "host": "bozghale.pages.dev",
+          "path": "/trbBKcsydgxEylNzuW/MTkzLjEyMy44MS4xMDUsMy43NS4xNzAuMTc5LDIxMi4zNC4xNDIuMjM4?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "http/1.1"
+          ],
+          "serverName": "boZgHALe.PAgEs.deV"
+        }
+      },
+      "tag": "prox-34"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "[2606:4700:3030::6815:2001]",
+            "port": 443,
+            "password": "MaHdY833",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "domainStrategy": "UseIPv4v6"
+        },
+        "wsSettings": {
+          "host": "bozghale.pages.dev",
+          "path": "/tr9yQtdcoxAbpzAMJV/MTkzLjEyMy44MS4xMDUsMy43NS4xNzAuMTc5LDIxMi4zNC4xNDIuMjM4?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "http/1.1"
+          ],
+          "serverName": "bOZgHaLE.pAges.DeV"
+        }
+      },
+      "tag": "prox-35"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "[2606:4700:3030::6815:4001]",
+            "port": 443,
+            "password": "MaHdY833",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "domainStrategy": "UseIPv4v6"
+        },
+        "wsSettings": {
+          "host": "bozghale.pages.dev",
+          "path": "/trp1OwWiIcCfjBDpTO/MTkzLjEyMy44MS4xMDUsMy43NS4xNzAuMTc5LDIxMi4zNC4xNDIuMjM4?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "http/1.1"
+          ],
+          "serverName": "bOzGHaLe.pAGEs.Dev"
+        }
+      },
+      "tag": "prox-36"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "[2606:4700:3030::6815:7001]",
+            "port": 443,
+            "password": "MaHdY833",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "domainStrategy": "UseIPv4v6"
+        },
+        "wsSettings": {
+          "host": "bozghale.pages.dev",
+          "path": "/trS8RnNXEKWzH4hZvK/MTkzLjEyMy44MS4xMDUsMy43NS4xNzAuMTc5LDIxMi4zNC4xNDIuMjM4?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "http/1.1"
+          ],
+          "serverName": "BOzGhaLE.PAges.dev"
+        }
+      },
+      "tag": "prox-37"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "[2606:4700:3030::6815:3001]",
+            "port": 443,
+            "password": "MaHdY833",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "domainStrategy": "UseIPv4v6"
+        },
+        "wsSettings": {
+          "host": "bozghale.pages.dev",
+          "path": "/trqZtNniZZFqSLr2OL/MTkzLjEyMy44MS4xMDUsMy43NS4xNzAuMTc5LDIxMi4zNC4xNDIuMjM4?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "http/1.1"
+          ],
+          "serverName": "bozGHAlE.pAGEs.deV"
+        }
+      },
+      "tag": "prox-38"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "[2606:4700:3030::6815:5001]",
+            "port": 443,
+            "password": "MaHdY833",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "domainStrategy": "UseIPv4v6"
+        },
+        "wsSettings": {
+          "host": "bozghale.pages.dev",
+          "path": "/trdTShdFNKjdZHGx1P/MTkzLjEyMy44MS4xMDUsMy43NS4xNzAuMTc5LDIxMi4zNC4xNDIuMjM4?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "http/1.1"
+          ],
+          "serverName": "bOzgHAle.pAGes.DeV"
+        }
+      },
+      "tag": "prox-39"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "[2606:4700:3030::6815:6001]",
+            "port": 443,
+            "password": "MaHdY833",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "domainStrategy": "UseIPv4v6"
+        },
+        "wsSettings": {
+          "host": "bozghale.pages.dev",
+          "path": "/trWb7c1sf4pz1mVIN0/MTkzLjEyMy44MS4xMDUsMy43NS4xNzAuMTc5LDIxMi4zNC4xNDIuMjM4?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "http/1.1"
+          ],
+          "serverName": "BOZGHAlE.PAGEs.dev"
+        }
+      },
+      "tag": "prox-40"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "zula.ir",
+            "port": 443,
+            "password": "MaHdY833",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "domainStrategy": "UseIPv4v6"
+        },
+        "wsSettings": {
+          "host": "bozghale.pages.dev",
+          "path": "/trT4V5xHRMpbnLg1qh/MTkzLjEyMy44MS4xMDUsMy43NS4xNzAuMTc5LDIxMi4zNC4xNDIuMjM4?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "http/1.1"
+          ],
+          "serverName": "bozGhale.pAGES.dEv"
+        }
+      },
+      "tag": "prox-41"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "185.18.250.21",
+            "port": 443,
+            "password": "MaHdY833",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "domainStrategy": "UseIPv4v6"
+        },
+        "wsSettings": {
+          "host": "bozghale.pages.dev",
+          "path": "/tr7VQfpyEX4RCh35Ko/MTkzLjEyMy44MS4xMDUsMy43NS4xNzAuMTc5LDIxMi4zNC4xNDIuMjM4?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "http/1.1"
+          ],
+          "serverName": "boZGhaLE.pAGEs.DeV"
+        }
+      },
+      "tag": "prox-42"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "185.18.250.16",
+            "port": 443,
+            "password": "MaHdY833",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "domainStrategy": "UseIPv4v6"
+        },
+        "wsSettings": {
+          "host": "bozghale.pages.dev",
+          "path": "/tras6cdIBubnHOAjpJ/MTkzLjEyMy44MS4xMDUsMy43NS4xNzAuMTc5LDIxMi4zNC4xNDIuMjM4?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "http/1.1"
+          ],
+          "serverName": "bOzgHALe.PAGes.DEV"
+        }
+      },
+      "tag": "prox-43"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "185.18.250.1",
+            "port": 443,
+            "password": "MaHdY833",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "domainStrategy": "UseIPv4v6"
+        },
+        "wsSettings": {
+          "host": "bozghale.pages.dev",
+          "path": "/trrvusXvQeFt9QXJZO/MTkzLjEyMy44MS4xMDUsMy43NS4xNzAuMTc5LDIxMi4zNC4xNDIuMjM4?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "http/1.1"
+          ],
+          "serverName": "bozghALe.PAGEs.DEV"
+        }
+      },
+      "tag": "prox-44"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "185.18.250.5",
+            "port": 443,
+            "password": "MaHdY833",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "domainStrategy": "UseIPv4v6"
+        },
+        "wsSettings": {
+          "host": "bozghale.pages.dev",
+          "path": "/trUqWSXZqqrsWEztfR/MTkzLjEyMy44MS4xMDUsMy43NS4xNzAuMTc5LDIxMi4zNC4xNDIuMjM4?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "http/1.1"
+          ],
+          "serverName": "boZghaLe.PAGES.DeV"
+        }
+      },
+      "tag": "prox-45"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "[2606:4700:20::ac43:49a3]",
+            "port": 443,
+            "password": "MaHdY833",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "domainStrategy": "UseIPv4v6"
+        },
+        "wsSettings": {
+          "host": "bozghale.pages.dev",
+          "path": "/trd20p3U2QxT2EOkoE/MTkzLjEyMy44MS4xMDUsMy43NS4xNzAuMTc5LDIxMi4zNC4xNDIuMjM4?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "http/1.1"
+          ],
+          "serverName": "bozGHaLE.pAGEs.Dev"
+        }
+      },
+      "tag": "prox-46"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "[2606:4700:20::681a:e55]",
+            "port": 443,
+            "password": "MaHdY833",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "domainStrategy": "UseIPv4v6"
+        },
+        "wsSettings": {
+          "host": "bozghale.pages.dev",
+          "path": "/tr5k5gfIwM4jYjZnQV/MTkzLjEyMy44MS4xMDUsMy43NS4xNzAuMTc5LDIxMi4zNC4xNDIuMjM4?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "http/1.1"
+          ],
+          "serverName": "boZghALe.PaGEs.Dev"
+        }
+      },
+      "tag": "prox-47"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "[2606:4700:20::681a:f55]",
+            "port": 443,
+            "password": "MaHdY833",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "domainStrategy": "UseIPv4v6"
+        },
+        "wsSettings": {
+          "host": "bozghale.pages.dev",
+          "path": "/trvbP7vpKsNAiXAYuo/MTkzLjEyMy44MS4xMDUsMy43NS4xNzAuMTc5LDIxMi4zNC4xNDIuMjM4?ed=2560"
+        },
+        "tlsSettings": {
+          "allowInsecure": false,
+          "fingerprint": "randomized",
+          "alpn": [
+            "http/1.1"
+          ],
+          "serverName": "bozgHAlE.PAGES.DEV"
+        }
+      },
+      "tag": "prox-48"
+    },
+    {
+      "protocol": "dns",
+      "tag": "dns-out"
+    },
+    {
+      "protocol": "freedom",
+      "settings": {
+        "domainStrategy": "UseIP"
+      },
+      "tag": "direct"
+    },
+    {
+      "protocol": "blackhole",
+      "settings": {
+        "response": {
+          "type": "http"
+        }
+      },
+      "tag": "block"
+    }
+  ],
+  "policy": {
+    "levels": {
+      "8": {
+        "connIdle": 300,
+        "downlinkOnly": 1,
+        "handshake": 4,
+        "uplinkOnly": 1
+      }
+    },
+    "system": {
+      "statsOutboundUplink": true,
+      "statsOutboundDownlink": true
+    }
+  },
+  "routing": {
+    "domainStrategy": "IPIfNonMatch",
+    "rules": [
+      {
+        "inboundTag": [
+          "dns-in"
+        ],
+        "outboundTag": "dns-out",
+        "type": "field"
+      },
+      {
+        "inboundTag": [
+          "socks-in"
+        ],
+        "port": "53",
+        "outboundTag": "dns-out",
+        "type": "field"
+      },
+      {
+        "inboundTag": [
+          "dns"
+        ],
+        "ip": [
+          "8.8.8.8"
+        ],
+        "port": "53",
+        "outboundTag": "direct",
+        "type": "field"
+      },
+      {
+        "inboundTag": [
+          "dns"
+        ],
+        "balancerTag": "all",
+        "type": "field"
+      },
+      {
+        "domain": [
+          "geosite:category-ads-all",
+          "geosite:category-ads-ir",
+          "geosite:category-porn"
+        ],
+        "outboundTag": "block",
+        "type": "field"
+      },
+      {
+        "domain": [
+          "geosite:private",
+          "geosite:category-ir"
+        ],
+        "outboundTag": "direct",
+        "type": "field"
+      },
+      {
+        "ip": [
+          "geoip:private",
+          "geoip:ir"
+        ],
+        "outboundTag": "direct",
+        "type": "field"
+      },
+      {
+        "network": "udp",
+        "outboundTag": "block",
+        "type": "field"
+      },
+      {
+        "network": "tcp",
+        "balancerTag": "all",
+        "type": "field"
+      }
+    ],
+    "balancers": [
+      {
+        "tag": "all",
+        "selector": [
+          "prox"
+        ],
+        "strategy": {
+          "type": "leastPing"
+        },
+        "fallbackTag": "prox-2"
+      }
+    ]
+  },
+  "stats": {},
+  "observatory": {
+    "subjectSelector": [
+      "prox"
+    ],
+    "probeUrl": "https://www.gstatic.com/generate_204",
+    "probeInterval": "30s",
+    "enableConcurrency": true
+  }
+}
