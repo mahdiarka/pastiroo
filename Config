@@ -1,6 +1,4 @@
-[vless://9cf5cc8b-72ec-474e-94d5-86bfee66dba2@x5aw915qz0m9huiazb4wcmghg2fzjjx6.saeedinikmahdi.workers.dev:80?path=%2FrT0f8BQpKHX5JrXT%3Fed%3D2560&security=none&encryption=none&host=x5aw915qz0m9huiazb4wcmghg2fzjjx6.saeedinikmahdi.workers.dev&type=ws#vls%2080
-vless://9cf5cc8b-72ec-474e-94d5-86bfee66dba2@x5aw915qz0m9huiazb4wcmghg2fzjjx6.saeedinikmahdi.workers.dev:443?path=%2F2lf5mjJCdl9oZJGh%3Fed%3D2560&security=tls&alpn=http%2F1.1&encryption=none&host=x5aw915qz0m9huiazb4wcmghg2fzjjx6.saeedinikmahdi.workers.dev&fp=randomized&type=ws&sni=X5aw915qz0m9hUIAZB4wcmghg2FzJJX6.SAEEdInIKMAhDI.wOrkeRs.DeV#vls%20443
-{
+[{
   "remarks": "cus vls 80",
   "log": {
     "loglevel": "warning"
