@@ -1,3 +1,68 @@
-vless://9cf5cc8b-72ec-474e-94d5-86bfee66dba2@x5aw915qz0m9huiazb4wcmghg2fzjjx6.saeedinikmahdi.workers.dev:443?path=%2F%3Fed%3D2560&security=tls&alpn=http%2F1.1&encryption=none&host=ataaa.gemated846.workers.dev&fp=randomized&type=ws&sni=ataaa.gemated846.workers.dev#vls%20443%20ata
-vless://9cf5cc8b-72ec-474e-94d5-86bfee66dba2@x5aw915qz0m9huiazb4wcmghg2fzjjx6.saeedinikmahdi.workers.dev:443?path=%2FvUqHsQSorxv6sLuC%3Fed%3D2560&security=tls&alpn=http%2F1.1&encryption=none&host=x5aw915qz0m9huiazb4wcmghg2fzjjx6.saeedinikmahdi.workers.dev&fp=randomized&type=ws&sni=X5aW915qz0M9HuIAZb4WCmGHG2fzjJX6.SAEEDINikmaHdi.woRKerS.dEV#vls%20443%20mahdi
-vless://9cf5cc8b-72ec-474e-94d5-86bfee66dba2@x5aw915qz0m9huiazb4wcmghg2fzjjx6.saeedinikmahdi.workers.dev:443?path=%2FFPvLaPCal6w3UjfF%3Fed%3D2560&security=tls&alpn=http%2F1.1&encryption=none&host=alucard.codmpastiroo.workers.dev&fp=randomized&type=ws&sni=AluCArD.CodmpaSTIrOO.WoRKeRs.DeV#vls%20443%20alucard
+{
+  "inbounds": [
+    {
+      "port": 10808,
+      "listen": "127.0.0.1",
+      "protocol": "socks",
+      "settings": {
+        "auth": "noauth",
+        "udp": true
+      },
+      "sniffing": {
+        "enabled": true,
+        "destOverride": ["http", "tls"]
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "http",
+      "settings": {
+        "servers": [
+          {
+            "address": "0000:0000:0000:0000:0000:ffff:5896:9a1b",
+            "port": 8080,
+            "users": [
+              {
+                "user": "Te1egram_BugFreeNet",
+                "pass": "Te1egram_BugFreeNet"
+              }
+            ]
+          }
+        ]
+      },
+      "tag": "proxy"
+    },
+    { "protocol": "freedom", "tag": "direct" },
+    { "protocol": "blackhole", "tag": "block" }
+  ],
+  "dns": {
+    "servers": ["1.1.1.1"]
+  },
+  "routing": {
+    "domainStrategy": "IPIfNonMatch",
+    "rules": [
+      {
+        "type": "field",
+        "domain": ["geosite:cn"],
+        "outboundTag": "direct"
+      },
+      {
+        "type": "field",
+        "ip": ["geoip:cn"],
+        "outboundTag": "direct"
+      },
+      {
+        "type": "field",
+        "domain": ["domain:googleapis.cn"],
+        "outboundTag": "proxy"
+      },
+      {
+        "type": "field",
+        "network": "udp",
+        "port": "443",
+        "outboundTag": "block"
+      }
+    ]
+  }
+}
